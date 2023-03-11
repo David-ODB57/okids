@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="columns">
-      <img :src="require('@/assets/logo-optimization.png')" alt="logo" />
+      <img :src="require('@/assets/logo.png')" alt="logo" />
       <div class="middle-column">
         <h3>Coordonnées</h3>
         <p>51 Rue de Sully, 57110 Hauconcourt 0650134469</p>

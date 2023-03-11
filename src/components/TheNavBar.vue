@@ -1,16 +1,14 @@
 <template>
   <nav>
     <div class="navbar-brand">
-      <a href="/"
-        ><img :src="require('@/assets/logo-optimization.png')" alt="logo"
-      /></a>
+      <a href="/"><img :src="require('@/assets/logo.png')" alt="logo" /></a>
     </div>
     <ul>
       <li><a href="/">accueil</a></li>
       <li><a href="#">parc</a></li>
       <li><a href="#">anniversaire</a></li>
-      <li><a href="/anniversaire">snack</a></li>
-      <li><a href="#">infos</a></li>
+      <li><a href="#snack">snack</a></li>
+      <li><a href="#tarifs">tarifs</a></li>
       <li><a href="#">contact</a></li>
     </ul>
     <the-social-links />
@@ -43,10 +41,10 @@ root {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
-  padding: 3em 6%;
+  padding: 0.5em 3%;
   background: #bf3782;
   font-family: "Shantell Sans", cursive;
 }

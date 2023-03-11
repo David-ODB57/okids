@@ -14,8 +14,9 @@ export default {
 
 <style>
 .social {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-self: flex-end; */
 }
 i {
   font-size: 1.7em;
