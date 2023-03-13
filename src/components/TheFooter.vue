@@ -4,7 +4,8 @@
       <img :src="require('@/assets/logo.png')" alt="logo" />
       <div class="middle-column">
         <h3>Coordonnées</h3>
-        <p>51 Rue de Sully, 57110 Hauconcourt 0650134469</p>
+        <p>Rue du Pré le loup ZI de Talange-Hauconcourt 57280HAUCONCOURT</p>
+        <p>Tél :03.87.30.49.70</p>
       </div>
       <div class="last-column">
         <div class="wifi">
@@ -25,12 +26,18 @@
         </div>
       </div>
     </div>
-    <p>© Okids 2023</p>
+    <div class="social">
+      <the-social-links />
+    </div>
+    <span>© Okids 2023</span>
   </footer>
 </template>
 
 <script>
+import TheSocialLinks from "./TheSocialLinks.vue";
+
 export default {
+  components: { TheSocialLinks },
   name: "TheFooter",
 };
 </script>
@@ -46,7 +53,7 @@ i {
   margin-bottom: 0.5em;
 }
 img {
-  width: 200px;
+  width: 300px;
 }
 .columns {
   display: block;
@@ -54,7 +61,11 @@ img {
 .columns > * {
   padding: 1rem;
 }
-
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .last-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,7 +80,16 @@ img {
   font-weight: 900;
   text-transform: uppercase;
 }
-
+span {
+  display: flex;
+  justify-content: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
 @media (min-width: 768px) {
   .columns {
     display: grid;

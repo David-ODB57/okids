@@ -1,6 +1,8 @@
 <template>
   <div class="social">
-    <a href="http://"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/royalkids.hauconcourt/?locale=fr_FR"
+      ><i class="fab fa-facebook" aria-hidden="true"></i
+    ></a>
     <a href="http://"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     <a href="http://"><i class="fab fa-twitter" aria-hidden="true"></i></a>
   </div>
@@ -12,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .social {
   /* display: flex; */
   /* justify-content: flex-end; */
@@ -27,6 +29,6 @@ a + a {
   margin-left: 1em;
 }
 i:hover {
-  color: blue;
+  color: #00b3ff;
 }
 </style>
